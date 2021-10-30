@@ -1,0 +1,120 @@
+<!--
+ Copyright 2021 Franklin Siqueira.
+ SPDX-License-Identifier: Apache-2.0
+-->
+<div class="container">
+  <section class="contact">
+    <!-- // -->
+    <div class="contact-info">
+      <!-- // -->
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4891.960246539339!2d-34.91238481761533!3d-8.039583575733666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1634822778010!5m2!1spt-BR!2sbr"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+      <!-- // -->
+      <div class="contact-info-text">
+        <h3 class="main-heading"><span>Contact info</span></h3>
+        <ul>
+          <li>
+            Address: 52.060-410 @ 224<br />
+            <hr />
+          </li>
+          <li>Email: franklin.cs.design@gmail.com</li>
+          <li>Phone: +55 81 986 99 3715</li>
+          <li>Website: https://reactlab.herokuapp.com/</li>
+        </ul>
+      </div>
+    </div>
+    <!-- // -->
+    <div class="contact-form">
+      <!-- <h3 class="main-heading"><span>Let's keep in touch</span></h3> -->
+      <h2 class="text-left mb-2 text-monospace">Let's keep in touch</h2>
+      <hr class="mt-2" />
+      <!-- <div id="contact-status"></div> -->
+      <!-- Both MatFormFieldModule and MatInputModule must be IMPORTED and DECLARED -->
+      <!-- <form class="mat-form-blog"> -->
+      <div fxLayoutGap="5px" fxLayout="column">
+        <form>
+          <div class="form-group">
+            <mat-form-field
+              class="matFormField-contact-blog"
+              appearance="outline"
+            >
+              <mat-label>E-mail</mat-label>
+              <input
+                id="email"
+                name="sender_email"
+                matInput
+                placeholder="something like yourname@gmail.com"
+                class="matInput-contact-blog"
+                [(ngModel)]="newMessageFromForm.sender_email"
+                required
+              />
+              <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+              <mat-hint>your e-mail address above</mat-hint>
+            </mat-form-field>
+          </div>
+          <div class="form-group">
+            <mat-form-field
+              class="matFormField-contact-blog"
+              appearance="outline"
+            >
+              <mat-label>Name</mat-label>
+              <input
+                id="name"
+                name="sender_name"
+                matInput
+                placeholder="your name here, please..."
+                class="matInput-contact-blog"
+                [(ngModel)]="newMessageFromForm.sender_name"
+                required
+              />
+              <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+              <mat-hint>Your name above</mat-hint>
+            </mat-form-field>
+          </div>
+          <div class="form-group">
+            <mat-form-field
+              class="matFormField-contact-blog"
+              hintLabel="Max: 500 characters"
+              appearance="outline"
+            >
+              <mat-label>Message</mat-label>
+              <!-- matFormTextarea-contact-blog -->
+              <textarea
+                id="message"
+                name="sender_message"
+                matInput
+                placeholder="type your message here..."
+                class="matFormTextarea-contact-blog"
+                #textMax
+                maxlength="500"
+                [(ngModel)]="newMessageFromForm.sender_message"
+                required
+              ></textarea>
+              <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+              <mat-hint align="end"
+                >{{ textMax.value?.length || 0 }} | 500</mat-hint
+              >
+            </mat-form-field>
+          </div>
+          <div class="d-flex justify-content-end">
+            <button
+              type="button"
+              class="btn btn-outline-warning mt-3 w-50"
+              (click)="newMessageFromUserForm()"
+            >
+              <!-- <button type="button" class="btn btn-outline-warning mt-3 w-50"> -->
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- /contact -->
+</div>
+<!-- /Content -->

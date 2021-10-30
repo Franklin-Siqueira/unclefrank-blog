@@ -1,0 +1,35 @@
+.footer {
+  background: #2d3e50;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  font-size: 80%;
+}
+
+.social-network--list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-icon {
+  color: #fbff00;
+  font-size: 1.5rem;
+  padding: .5rem;
+}
+
+.social-icon:hover {
+  color: #5ed073;
+}
+/*# sourceMappingURL=footer.component.css.map */

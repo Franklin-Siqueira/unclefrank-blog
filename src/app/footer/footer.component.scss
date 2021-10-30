@@ -1,0 +1,30 @@
+// Copyright 2021 Franklin Siqueira.
+// SPDX-License-Identifier: Apache-2.0
+
+.footer {
+  background: #2d3e50;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  font-size: 80%;
+}
+
+.social-network--list{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon {
+  color: rgb(251, 255, 0);
+  font-size: 1.5rem;
+  padding: .5rem;
+  // margin: 50%;
+
+  &:hover {
+    color: rgb(94, 208, 115);
+  }
+}
+

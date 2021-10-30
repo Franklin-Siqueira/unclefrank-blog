@@ -1,0 +1,88 @@
+/* Contact Section */
+/*-------------------------------------------------------*/
+.container {
+  width: 100vw;
+}
+
+#contact {
+  padding: 1em 0 1em 0;
+  overflow: hidden;
+  margin-left: 0%;
+  min-width: 100vw;
+}
+
+.contact-info,
+.contact-form {
+  float: left;
+  padding: 0 20px;
+}
+
+.contact-info {
+  width: 35%;
+}
+
+.contact-form {
+  width: 530px;
+  margin-left: 0.95em;
+}
+
+/* Contact info */
+.contact-info ul {
+  float: left;
+  border-left: 1px solid #cf455c;
+  padding-left: 18px;
+}
+
+.contact-info ul li {
+  font-size: 13px;
+  line-height: 20px;
+  color: #666;
+  overflow: hidden;
+}
+
+/* Google map */
+#map {
+  height: 22em;
+  margin-bottom: 1em;
+  min-width: 35vw;
+  width: 35%;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+#map iframe {
+  height: 22em;
+  border: 0;
+  width: 100%;
+}
+
+/*-------------------------------------------------------*/
+/* Forms */
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+.matForm-contact-blog {
+  padding: 6px 8px;
+  width: 100%;
+}
+
+.matFormField-contact-blog {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.matFormTextarea-contact-blog {
+  height: 10em;
+  line-height: 14px;
+  margin-bottom: 0;
+  padding-top: 8px;
+}
+
+.matInput-contact-blog {
+  height: 20px;
+  color: #05420b;
+  width: 100%;
+}
+
+/*-------------------------------------------------------*/
+/*# sourceMappingURL=contact.component.css.map */

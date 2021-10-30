@@ -1,0 +1,47 @@
+<!--
+ Copyright 2021 Franklin Siqueira.
+ SPDX-License-Identifier: Apache-2.0
+-->
+
+<div class="col-md-8">
+  <div>
+    <!-- // -->
+    <h2 class="text-left mb-2 text-monospace">Create a New Post Here</h2>
+    <hr class="mt-2" />
+    <div class="form-group">
+      <label for="postTitle" class="text-monospace">Title</label>
+      <input
+        id="postTitle"
+        name="postTitle"
+        type="text"
+        class="form-control"
+        placeholder="type your post's title"
+        [(ngModel)]="newPostFromForm.postTitle"
+      />
+    </div>
+    <div class="form-group">
+      <label for="postContents" class="text-monospace mt-2"
+        >Post's contents</label
+      >
+      <textarea
+        id="postContents"
+        name="postContents"
+        class="form-control"
+        cols="30"
+        rows="11"
+        placeholder="...your text goes here..."
+        [(ngModel)]="newPostFromForm.postContents"
+      ></textarea>
+    </div>
+    <div class="d-flex justify-content-end">
+      <button
+        type="button"
+        class="btn btn-outline-warning mt-3 w-50"
+        (click)="newPostFromUserForm()"
+      >
+        <!-- <button type="button" class="btn btn-outline-warning mt-3 w-50"> -->
+        PUBLISH
+      </button>
+    </div>
+  </div>
+</div>

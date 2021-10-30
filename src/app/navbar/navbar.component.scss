@@ -1,0 +1,65 @@
+// Copyright 2021 Franklin Siqueira.
+// SPDX-License-Identifier: Apache-2.0
+
+.companyName {
+  font-size: 110%;
+}
+
+.mat-toolbar {
+  background: rgba(60, 84, 94, 0.65);
+  position: fixed;
+  height: 7vh;
+  top: 0;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  z-index: 10;
+}
+
+// div {
+//   overflow: inherit;
+// }
+
+// .mat-sidenav-container {
+//   background-color: rgb(186, 207, 220);
+//   min-height: 93vh !important;
+// }
+
+a {
+  text-decoration: none;
+  font-size: 80%;
+  white-space: normal;
+}
+
+.mat-toolbar button {
+  font-size: 100%;
+  min-width: min-content;
+}
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+// .mat-sidenav-content {
+//   font-size: 200%;
+//   // opacity: ;
+//   text-align: center;
+// }
+.mat-sidenav {
+  background: rgba(170, 210, 227, 0.65);
+  // background-color: rgb(238, 242, 242);
+  color: rgb(237, 237, 159);
+  width: 50%;
+  font-size: 150%;
+  text-align: left;
+  margin-top: 7vh;
+}

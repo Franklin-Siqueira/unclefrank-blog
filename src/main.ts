@@ -1,3 +1,6 @@
+// Copyright 2021 Franklin Siqueira.
+// SPDX-License-Identifier: Apache-2.0
+
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 

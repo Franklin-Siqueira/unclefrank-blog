@@ -1,0 +1,264 @@
+// Copyright 2021 Franklin Siqueira.
+// SPDX-License-Identifier: Apache-2.0
+
+:root {
+  --heroImageLink: "./../../assets/img/thirdparty/kojirou-sasaki-DLdDrb2d4F4-unsplash.jpg";
+}
+
+#square {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  // align-items: center;
+  // justify-content: center;
+
+  h1 {
+    font-size: 5rem;
+    width: 100%;
+    line-height: 5rem;
+    color: rgb(226, 233, 20);
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    z-index: 9999;
+    text-shadow: 0px 2px 2px rgba(150, 150, 150, 1);
+    // padding: 20px;
+    margin-top: 50%;
+    margin-left: 4em;
+    // margin-right: 2em;
+  }
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 1500px;
+    min-width: 100vw;
+    // min-height: 100%;
+    transition: 0.001s;
+  }
+}
+
+.hero {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  // h1 {
+  //   font-size: 60px;
+  //   color: white;
+  //   font-family: "Roboto", sans-serif;
+  //   z-index: 9999;
+  //   text-shadow: 0px 2px 2px rgba(150, 150, 150, 1);
+  //   padding: 20px;
+  // }
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 1500px;
+    min-width: 100%;
+    min-height: 100%;
+    transition: 0.001s;
+  }
+}
+
+div {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+
+  h2,
+  p {
+    font-family: "Roboto", sans-serif;
+  }
+
+  h2 {
+    font-size: 30px;
+    padding-bottom: 40px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+// .parallax-one:before {
+  .parallax-one {
+  --heroImageLink: url("./../../assets/img/thirdparty/kojirou-sasaki-DLdDrb2d4F4-unsplash.jpg");
+  z-index: -1;
+  background-image: var(--heroImageLink);
+  min-height: 500px;
+  min-width: 100vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // backdrop-filter: blur(1px);
+  background-color: rgba(255, 255, 255, 0.2);
+  //
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+
+  &h1 {
+    z-index: 0;
+    font-size: 4em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 700;
+    filter: none;
+  }
+}
+
+// .parallax-one {
+//   content: "";
+//   position: fixed;
+//   left: 0;
+//   right: 0;
+//   z-index: 0;
+//   margin-left: 20px;
+//   margin-right: 20px;
+// }
+
+.parallax {
+  color: rgb(251, 255, 0);
+}
+
+/* ---------------------------------------------- */
+// .content:before {
+//   // --heroImageLink1: url("./../../assets/img/thirdparty/kojirou-sasaki-DLdDrb2d4F4-unsplash.jpg");
+//   content: "";
+//   position: fixed;
+//   left: 0;
+//   right: 0;
+//   z-index: -1;
+
+//   display: block;
+//   // background-image: var(--heroImageLink);
+//   background-image: url("./../../assets/img/thirdparty/kojirou-sasaki-DLdDrb2d4F4-unsplash.jpg");
+//   width: 1200px;
+//   height: 800px;
+
+//   -webkit-filter: blur(5px);
+//   -moz-filter: blur(5px);
+//   -o-filter: blur(5px);
+//   -ms-filter: blur(5px);
+//   filter: blur(5px);
+// }
+
+.content {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  &::before{
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    display: block;
+    // background-image: var(--heroImageLink);
+    background-image: url("./../../assets/img/thirdparty/kojirou-sasaki-DLdDrb2d4F4-unsplash.jpg");
+    width: 1200px;
+    height: 800px;
+
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
+}
+
+.content-one {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.content-one::before{
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  // background-image: var(--heroImageLink);
+  background-image: url("./../../assets/img/thirdparty/kojirou-sasaki-DLdDrb2d4F4-unsplash.jpg");
+  width: 1200px;
+  height: 800px;
+
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+/*
+------------------------------
+*/
+.module {
+  // width: 300px;
+  // height: 300px;
+  min-height: 500px;
+  min-width: 100vw;
+  display: grid;
+  place-items: center;
+  color: #50384d;
+  position: relative;
+}
+.module::before {
+  // content: "";
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  // height: 100%;
+  position: absolute;
+  // background-image: url("./../../assets/img/thirdparty/kojirou-sasaki-DLdDrb2d4F4-unsplash.jpg");
+  // background-size: cover;
+  // filter: grayscale(100%);
+  --heroImageLink: url("./../../assets/img/thirdparty/kojirou-sasaki-DLdDrb2d4F4-unsplash.jpg");
+  content: "";
+  background-image: var(--heroImageLink);
+  min-height: 500px;
+  min-width: 100vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // backdrop-filter: blur(1px);
+  background-color: rgba(255, 255, 255, 0.2);
+  //
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+.module-inside {
+  position: relative;
+  font: bold 42px sans-serif;
+}

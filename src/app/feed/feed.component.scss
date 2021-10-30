@@ -1,0 +1,57 @@
+// Copyright 2021 Franklin Siqueira.
+// SPDX-License-Identifier: Apache-2.0
+
+/* Feed Section */
+/*-------------------------------------------------------*/
+html {
+  font-size: 12px;
+}
+
+.container-feed {
+  margin-top: 8vh;
+  display: flexbox;
+}
+
+.component-wrapper-container {
+  // background-color: #b2a2a5;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  //
+  flex-direction: row;
+  flex-basis: 100%;
+  flex: 2;
+  //
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex: 2;
+  }
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+.mat-card-custom-image {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+  padding: 0.5em;
+}
+
+// .row {
+//   display: flex;
+//   margin-top: 1em;
+//   margin-bottom: 1em;
+//   row-gap: 0.5em;
+//   // column-gap: 0.025em;
+// }

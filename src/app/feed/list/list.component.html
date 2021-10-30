@@ -1,0 +1,53 @@
+<!--
+ Copyright 2021 Franklin Siqueira.
+ SPDX-License-Identifier: Apache-2.0
+-->
+<mat-card class="example-card">
+  <mat-card-title-group class="mat-card-title-group--list">
+    <span>
+      <img
+        mat-card-sm-image
+        src="../../assets/img/atMCO.png"
+        alt="Developer's photo"
+      />
+    </span>
+    <mat-card-title>
+      {{ mainCardTitle }}
+    </mat-card-title>
+    <div class="search-paginator">
+      <form class="search-form">
+        <mat-form-field name="titleSearch" class="example-full-width" appearance="outline">
+          <mat-label  style="height: 1em">Search...</mat-label>
+          <!-- <span matPrefix>+1 &nbsp;</span> -->
+          <input name="titleSearch" type="text" matInput placeholder="Search by title..." />
+          <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+      </form>
+      <mat-paginator
+        [length]="totalPosts"
+        [pageSize]="postsPerPage"
+        [pageSizeOptions]="[5, 10, 25, 50]"
+        showFirstLastButtons="firstLastButtons"
+        aria-label="Select page"
+        (page)="onPageChange($event)"
+      >
+      </mat-paginator
+    ></div>
+    <mat-card-subtitle>{{ mainCardSubtitle }}</mat-card-subtitle>
+  </mat-card-title-group>
+  <mat-card-content>
+    <div class="card mb-6" *ngFor="let post of postList">
+      <div class="card-header">
+        <h3 class="card-title">{{ post.postTitle.substring(0, 100) }}</h3>
+        <h5 class="card-subtitle text-muted">
+          Created: {{ post.createdAt }} | {{ post.id }}
+        </h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          {{ post.postContents.substring(0, 300) }}... view more
+        </p>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,45 @@
+.companyName {
+  font-size: 110%;
+}
+
+.mat-toolbar {
+  height: 7vh;
+}
+
+div {
+  overflow: inherit;
+}
+
+.mat-sidenav-container {
+  background-color: lightskyblue;
+  min-height: 93vh !important;
+}
+
+a {
+  text-decoration: none;
+  font-size: 80%;
+  white-space: normal;
+}
+
+button {
+  font-size: 100%;
+  min-width: -webkit-min-content;
+  min-width: -moz-min-content;
+  min-width: min-content;
+}
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.mat-sidenav-content {
+  font-size: 200%;
+  text-align: center;
+}
+/*# sourceMappingURL=navbar.component.css.map */

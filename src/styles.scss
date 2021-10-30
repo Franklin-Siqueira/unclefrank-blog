@@ -1,1 +1,25 @@
+// Copyright 2021 Franklin Siqueira.
+// SPDX-License-Identifier: Apache-2.0
+
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+
+/* */
+// html {
+//   padding: 20px 0;
+// }
+
+// body {
+//   padding: 0 20px 0 10px;
+// }
+
+.nav-bar {
+  padding: auto 10px auto 10px;
+}
+
+.navbar-brand {
+  padding: 1px 10px 1px 10px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,35 @@
+{
+  "name": "UncleFrank-blog",
+  "version": "1.0.0",
+  "description": "Blog backend package, using json-server (Dev) and express (Prod) files",
+  "main": "jsonServerMultiple.js",
+  "scripts": {
+    "start:server": "nodemon jsonServerMultiple.js",
+    "start": "node mailJet.js"
+  },
+  "keywords": [
+    "json",
+    "server",
+    "mockup"
+  ],
+  "author": "Franklin Siqueira | https://github.com/franklin-siqueira",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "csvtojson": "^2.0.10",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-jwt": "^6.1.0",
+    "formidable": "^1.2.2",
+    "json-server": "^0.16.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.0.12",
+    "node-mailjet": "^3.3.4",
+    "nodemailer": "^6.7.0",
+    "nodemon": "^2.0.14",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.1.6",
+    "uuid": "^8.3.2"
+  }
+}

@@ -1,0 +1,154 @@
+// Copyright 2021 Franklin Siqueira.
+// SPDX-License-Identifier: Apache-2.0
+
+/* Contact Section */
+/*-------------------------------------------------------*/
+html {
+  font-size: 12px;
+}
+.container {
+  // background-color: #b2a2a5;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  //
+  flex-direction: row;
+  flex-basis: 100%;
+  flex: 2;
+  //
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex: 2;
+  }
+}
+
+.contact {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  display: flex;
+  //
+  flex-direction: row;
+  flex-basis: 100%;
+  flex: 2;
+  //
+  align-items: center;
+  justify-content: center;
+  padding: 1em 0 1em 0;
+  overflow: hidden;
+  margin-left: 0%;
+  min-width: 100%;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex: 2;
+
+    .contact-form {
+      // width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    .map {
+      min-width: 100%;
+      width: 80em;
+      // float: right;
+      margin-top: 2em;
+    }
+    .contact-info-text {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// .contact-info,
+// .contact-form {
+//   // float: left;
+//   padding: 0 20px;
+// }
+
+.contact-info {
+  // width: 250px;
+  float: left;
+  width: 35%;
+  min-width: 10rem;
+}
+
+.contact-form {
+  width: 60%;
+  min-width: 20rem;
+  float: right;
+  margin-left: 1%;
+  // margin-left: 0.95em;
+  // width: auto;
+}
+
+/* Contact info */
+.contact-info ul {
+  float: left;
+  border-left: 1px solid #cf455c;
+  padding-left: 18px;
+}
+
+.contact-info ul li {
+  font-size: 13px;
+  line-height: 20px;
+  color: #666;
+  overflow: hidden;
+}
+
+/* Google map */
+.map {
+  height: 22em;
+  margin-bottom: 1em;
+  min-width: 35%;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+
+  & iframe {
+    height: 22em;
+    border: 0;
+    width: 100%;
+    // allowfullscreen
+    // loading="lazy"
+  }
+}
+
+/*-------------------------------------------------------*/
+
+.form-group {
+  // background-color: rgb(255, 255, 255);
+  margin-top: 1px;
+}
+
+.matForm-contact-blog {
+  padding: 6px 8px;
+  width: 100%;
+}
+
+.matFormField-contact-blog {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.matFormTextarea-contact-blog {
+  height: 10em;
+  line-height: 14px;
+  margin-bottom: 0;
+  padding-top: 8px;
+}
+
+.matInput-contact-blog {
+  height: 20px;
+  color: #05420b;
+  width: 100%;
+}
+
+/*-------------------------------------------------------*/

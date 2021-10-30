@@ -1,0 +1,94 @@
+// Copyright 2021 Franklin Siqueira.
+// SPDX-License-Identifier: Apache-2.0
+
+:host {
+  ::ng-deep .mat-form-field-flex > .mat-form-field-infix {
+    padding: 0.4em 0px !important;
+  }
+
+  ::ng-deep .mat-form-field-label-wrapper {
+    top: -1.5em;
+  }
+
+  ::ng-deep
+    .mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float
+    .mat-form-field-label {
+    transform: translateY(-1.1em) scale(0.75);
+    width: 133.33333%;
+  }
+}
+
+.example-card {
+  min-width: 100%;
+  width: 800px;
+}
+
+span {
+  padding: 0;
+}
+
+.mat-card-title-group--list {
+  display: flex;
+  align-items: center;
+  // justify-content:;
+  margin-bottom: 1em;
+}
+
+.mat-paginator {
+  display: flexbox;
+  align-items: flex-end;
+  justify-content: center;
+  transform: scale(0.8);
+  margin: 0;
+  padding: 0;
+  height: 1.75rem;
+
+  .mat-paginator-outer-container {
+    display: flexbox;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mat-paginator-container {
+    display: flexbox;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mat-paginator-page-size {
+    margin: 0;
+    padding: 0;
+  }
+
+  .mat-form-field-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.mat-card-sm-image {
+  border-radius: 50%;
+  width: 3.5em;
+  height: 3.5em;
+  padding: 0.25em;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+}
+
+.search-paginator {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+
+  .search-form {
+    margin-bottom: 0;
+  }
+}

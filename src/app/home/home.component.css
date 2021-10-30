@@ -1,0 +1,212 @@
+:root {
+  --heroImageLink: "./../../assets/img/thirdparty/kojirou-sasaki-DLdDrb2d4F4-unsplash.jpg";
+}
+
+#square {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#square h1 {
+  font-size: 5rem;
+  width: 100%;
+  line-height: 5rem;
+  color: #e2e914;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  z-index: 9999;
+  text-shadow: 0px 2px 2px #969696;
+  margin-top: 50%;
+  margin-left: 4em;
+}
+
+#square img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 1500px;
+  min-width: 100vw;
+  -webkit-transition: 0.001s;
+  transition: 0.001s;
+}
+
+.hero {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 1500px;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transition: 0.001s;
+  transition: 0.001s;
+}
+
+div {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+div h2,
+div p {
+  font-family: "Roboto", sans-serif;
+}
+
+div h2 {
+  font-size: 30px;
+  padding-bottom: 40px;
+}
+
+div p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.parallax-one {
+  --heroImageLink: url("./../../assets/img/thirdparty/kojirou-sasaki-DLdDrb2d4F4-unsplash.jpg");
+  z-index: -1;
+  background-image: var(--heroImageLink);
+  min-height: 500px;
+  min-width: 100vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.parallax-oneh1 {
+  z-index: 0;
+  font-size: 4em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 700;
+  -webkit-filter: none;
+          filter: none;
+}
+
+.parallax {
+  color: #fbff00;
+}
+
+/* ---------------------------------------------- */
+.content {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.content::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url("./../../assets/img/thirdparty/kojirou-sasaki-DLdDrb2d4F4-unsplash.jpg");
+  width: 1200px;
+  height: 800px;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.content-one {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.content-one::before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  background-image: url("./../../assets/img/thirdparty/kojirou-sasaki-DLdDrb2d4F4-unsplash.jpg");
+  width: 1200px;
+  height: 800px;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+/*
+------------------------------
+*/
+.module {
+  min-height: 500px;
+  min-width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: #50384d;
+  position: relative;
+}
+
+.module::before {
+  position: absolute;
+  --heroImageLink: url("./../../assets/img/thirdparty/kojirou-sasaki-DLdDrb2d4F4-unsplash.jpg");
+  content: "";
+  background-image: var(--heroImageLink);
+  min-height: 500px;
+  min-width: 100vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.module-inside {
+  position: relative;
+  font: bold 42px sans-serif;
+}
+/*# sourceMappingURL=home.component.css.map */
