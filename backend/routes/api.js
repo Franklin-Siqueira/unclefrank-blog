@@ -8,7 +8,6 @@
  *
  *
  */
-
 const express = require("express");
 const router = express.Router();
 //
@@ -51,7 +50,9 @@ router.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec, cssOptions));
 const User = require("../models/user");
 const Post = require("../models/events");
 */
+//
 // Retrieve controllers
+// Auth
 const {
   signin,
   signup,
@@ -62,6 +63,7 @@ const {
   isEmailUnique,
   isSigned,
 } = require("../controllers/auth");
+// Messages
 const {
   messageFromAppForm,
   messageReplyForm,

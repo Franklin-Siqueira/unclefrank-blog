@@ -6,9 +6,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http';
 // import { v4 as uuidv4 } from 'uuid';
 //
-import { HttpClientModule} from '@angular/common/http';
 //
 // App Specific
 // Components
@@ -22,11 +22,18 @@ import { CreateComponent } from './feed/create/create.component'
 import { ListComponent } from './feed/list/list.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { UsercardComponent } from './feed/usercard/usercard.component';
+// Directives
+import { ParallaxDirective } from './directives/parallax/parallax.directive';
+import { FloatingDirective } from './directives/floating/floating.directive';
+// Services
+import { NotificationService } from './services/notifications/notification.service';
 // General UI
 // FontAwesome
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 //
 // Angular Material UI /
+import { MatExpansionModule } from '@angular/material/expansion';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -38,12 +45,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input/';;
 import { MatCardModule } from  '@angular/material/card';
 import { MatPaginatorModule } from  '@angular/material/paginator';
-
-// import { MatDrawer } from '@angular/material';
-// import { MatSidenav } from '@angular/material/sidenav';
-// Directives
-import { ParallaxDirective } from './directives/parallax/parallax.directive';
-import { FloatingDirective } from './directives/floating/floating.directive';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { FloatingDirective } from './directives/floating/floating.directive';
     ParallaxDirective,
     FloatingDirective,
     ListComponent,
-    CreateComponent
+    CreateComponent,
+    UsercardComponent
   ],
   imports: [
     BrowserModule,
@@ -77,9 +79,10 @@ import { FloatingDirective } from './directives/floating/floating.directive';
     MatInputModule,
     MatCardModule,
     MatMenuModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatExpansionModule
     ],
-  providers: [],
+  providers: [NotificationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

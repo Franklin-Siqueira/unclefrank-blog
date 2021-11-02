@@ -23,15 +23,18 @@ export class GetPostTestService {
     const queryParams = `?pageSize=${pageSize}&page=${currentPage}`;
     return this.httpClient
       .get<{ message: string; posts: any; maxCount: number }>(
-        'API' + queryParams
+        this.API + queryParams
       )
       .pipe(
-        map((postData) => {
-          return { post: postData.posts, maxCount: postData.maxCount };
+        map((postDataPaginated) => {
+          console.log(postDataPaginated);
+          console.log(postDataPaginated.maxCount);
+          return { post: postDataPaginated.posts, maxCount: postDataPaginated.maxCount };
         })
       )
       .subscribe((res) => {
         this.posts = res.post;
+        console.log(res.post);
       });
   }
 }

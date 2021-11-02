@@ -37,7 +37,7 @@
 #### **About this project**
 <br/>
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Franklin-Siqueira/unclefrank-blog/graphs/commit-activity) [![GitLab last commit](https://badgen.net/github/last-commit/Franklin-Siqueira/unclefrank-blog/)](https://github.com/Franklin-Siqueira/unclefrank-blog/-/commits)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Franklin-Siqueira/[repoName]/graphs/commit-activity) [![GitLab last commit](https://badgen.net/github/last-commit/Franklin-Siqueira/unclefrank-blog/)](https://github.com/Franklin-Siqueira/[repoName]/-/commits)
 
 [![macOS](https://svgshare.com/i/ZjP.svg)](https://svgshare.com/i/ZjP.svg)
 [![Visual Studio Code](https://img.shields.io/badge/--007ACC?logo=visual%20studio%20code&logoColor=ffffff)](https://code.visualstudio.com/)
@@ -50,7 +50,11 @@
 
 https://...
 
-This is a sample implementation of a blog app, using Angular components.
+This is a sample implementation of a blog app, using Angular components. It's not meant to update the MOCK DATA but e-mail funcionality works as long as valid e-mail API credentials are placed in an .env file.
+
+Further UI changes are being provided and will be available soon.
+
+Please, feel free to contribute.
 
 ---
 **Building**
@@ -160,10 +164,10 @@ The ..
 
 
 
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/Franklin-Siqueira/unclefrank-blog/blob/main/LICENSE.md)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/Franklin-Siqueira/[repoName]/blob/main/LICENSE.md)
 
 
-This sample code is released using the MIT license. For more information see the [LICENSE](https://github.com/Franklin-Siqueira/unclefrank-blog/blob/main/LICENSE.md) file.
+This sample code is released using the MIT license. For more information see the [LICENSE](https://github.com/Franklin-Siqueira/[repoName]/blob/main/LICENSE.md) file.
 
 ---
 
@@ -196,3 +200,5 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 ---
+
+[repoName]: unclefrank-blog

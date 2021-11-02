@@ -3,82 +3,17 @@
  SPDX-License-Identifier: Apache-2.0
 -->
 <div class="container-feed">
-  <div fxLayout="row wrap" fxLayoutGap="3px">
+  <div fxLayout="row wrap" fxLayoutGap="1px" fxFlexAlign="space-evenly">
     <!-- <div class="col-sm-4 col-md col-sm-4 col-12 col"> -->
     <!-- // -->
-    <div>
+    <div class="flex-container" fxFlex="calc(10px+100px) 2 auto">
       <!-- // -->
-      <div class="card border-0" style="width: 12rem">
-        <div class="d-flex justify-content-center">
-          <img
-            class="card-img-top rounded-circle w-75"
-            src="../../assets/img/atMCO.png"
-            alt="Developer's photo"
-          />
-        </div>
-        <div class="card-body">
-          <h2 class="card-title mb-2 text-center">Franklin Siqueira</h2>
-          <p class="card-text mb-2 mt-2 text-center">WebDev | Freelancer</p>
-          <a
-            href="https://github.com/franklin-siqueira"
-            target="_blank"
-            class="btn btn-outline-dark d-flex justify-content-center"
-            >GitHub</a
-          >
-          <hr class="mt-2 mb-2" />
-          <h6 class="mb-2 text-monospace text-center">Search by Title</h6>
-          <input type="text" class="form-control mb-3 w-100" />
-          <button class="btn btn-outline-warning w-100">Search</button>
-        </div>
-      </div>
+      <app-usercard></app-usercard>
       <!-- // -->
     </div>
-    <div class="col-md">
+    <div class="flex-container" fxFlex="calc(10px+100px) 2 auto">
       <app-list></app-list>
     </div>
-    <div>
-      <app-create></app-create>
-    </div>
-    <!-- <div class="col-md-8">
-      <div>
-        <h2 class="text-left mb-2 text-monospace">Create a New Post Here</h2>
-        <hr class="mt-2" />
-        <div class="form-group">
-          <label for="postTitle" class="text-monospace">Title</label>
-          <input
-            id="postTitle"
-            name="postTitle"
-            type="text"
-            class="form-control"
-            placeholder="type your post's title"
-            [(ngModel)]="newPostFromForm.postTitle"
-          />
-        </div>
-        <div class="form-group">
-          <label for="postContents" class="text-monospace mt-2"
-            >Post's contents</label
-          >
-          <textarea
-            id="postContents"
-            name="postContents"
-            class="form-control"
-            cols="30"
-            rows="11"
-            placeholder="...your text goes here..."
-            [(ngModel)]="newPostFromForm.postContents"
-          ></textarea>
-        </div>
-        <div class="d-flex justify-content-end">
-          <button
-            type="button"
-            class="btn btn-outline-warning mt-3 w-50"
-            (click)="newPostFromUserForm()"
-          >
-            PUBLISH
-          </button>
-        </div>
-      </div>
-    </div> -->
     <!-- class col-md-8 (form) -->
   </div>
 </div>

@@ -9,7 +9,8 @@ html {
 
 .container-feed {
   margin-top: 8vh;
-  display: flexbox;
+  width: 100vw;
+  // display: flexbox;
 }
 
 .component-wrapper-container {
@@ -41,17 +42,3 @@ html {
   display: flex;
   justify-content: center;
 }
-
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
-  padding: 0.5em;
-}
-
-// .row {
-//   display: flex;
-//   margin-top: 1em;
-//   margin-bottom: 1em;
-//   row-gap: 0.5em;
-//   // column-gap: 0.025em;
-// }

@@ -16,11 +16,28 @@
     transform: translateY(-1.1em) scale(0.75);
     width: 133.33333%;
   }
+
+  ::ng-deep .mat-expansion-indicator:after {
+    color: white;
+  }
+}
+
+.card-container {
+  min-width: 450px;
+  max-width: 800px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .example-card {
-  min-width: 100%;
-  width: 800px;
+  // min-width: 100%;
+  // width: 800px;
+  border: 0;
+  // background-color: rgb(145, 168, 168);
+  padding: 0.25em;
+  margin: 0;
 }
 
 span {
@@ -32,7 +49,11 @@ span {
   align-items: center;
   // justify-content:;
   margin-bottom: 1em;
+  padding-top: 0.35em;
+  padding-left: 0.55em;
 }
+
+/* MatPaginator related */
 
 .mat-paginator {
   display: flexbox;
@@ -92,3 +113,34 @@ span {
     margin-bottom: 0;
   }
 }
+
+/* Expansion | mat-accordion related */
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-expansion-panel-header-title {
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+// .mat-expansion-panel-header {
+//   flex-direction: row-reverse;
+
+//   .mat-content {
+//     padding-left: 12px;
+//   }
+// }
+
+// <mat-panel-title _ngcontent-vwb-c169="" class="mat-expansion-panel-header-title ng-tns-c130-3"> Create a New Post</mat-panel-title>
